@@ -54,7 +54,7 @@ function App() {
           <Route path='/Arta' element={user ? <Arta /> : <NotLogin />} />
           <Route path='/Altele' element={user ? <Altele /> :  <NotLogin />} />
           <Route path='/CumparateDeMine' element={user ? <BoughtByMe /> : <NotLogin/>} />
-          <Route path='/success' element={<CheckOutSucces />}/>
+          <Route path='/succes' element={<CheckOutSucces />}/>
           <Route path='/cancel' element={<CheckOutCancel />} />
           <Route path='/VindeProdus' element={user ? <NewSellProd/> : <NotLogin />} /> 
           <Route path='/succes-sell-product' element={<SuccesSellProd />}/>
