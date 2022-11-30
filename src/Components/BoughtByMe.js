@@ -8,7 +8,7 @@ const BoughtByMe = () => {
   const [second_data, setSecondData] = useState(null);
   useEffect(() => {
     async function fetchProdBoughtByMe(username) {
-      const response = await fetch("/api/sell/bought", {
+      const response = await fetch("https://everest-app-api.onrender.com/api/sell/bought", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -19,7 +19,7 @@ const BoughtByMe = () => {
       setData(json);
     }
     async function fetchProdSoldByMe(username) {
-      const response = await fetch("/api/sell/productssoldbyme", {
+      const response = await fetch("https://everest-app-api.onrender.com/api/sell/productssoldbyme", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

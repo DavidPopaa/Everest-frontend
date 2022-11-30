@@ -31,7 +31,7 @@ const UpdateForm = ({
     navigate(0);
   };
   const handleUpdateProduct = () => {
-    fetch("/api/sell/update/" + id, {
+    fetch("https://everest-app-api.onrender.com/api/sell/update/" + id, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

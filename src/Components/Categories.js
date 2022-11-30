@@ -9,12 +9,12 @@ const Categories = () => {
   const [numberofProducts, setNumberofProducts] = useState(null)
   useEffect(() => {
     const fetchNumberOfProducts = async () => {
-      const response = await fetch('api/sell/getnumberofproducts')
+      const response = await fetch('https://everest-app-api.onrender.com/api/sell/getnumberofproducts')
       const json = await response.json()
       setNumberofProducts(json)
     }
     const fetchNumberOfUsers = async () => {
-      const response = await fetch('api/sell/getnumberofusers')
+      const response = await fetch('https://everest-app-api.onrender.com/api/sell/getnumberofusers')
       const json = await response.json()
       setNumberofUsers(json)
     }

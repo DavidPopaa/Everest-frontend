@@ -30,7 +30,7 @@ const NewSellProd = () => {
   const [locatie, setLocatie] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
-     await fetch("/api/sell/post/prod", {
+     await fetch("https://everest-app-api.onrender.com/api/sell/post/prod", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

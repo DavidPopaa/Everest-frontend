@@ -26,7 +26,7 @@ function SellProduct() {
     formData.append('locatie', locatie)
     formData.append('username', user.username)
     
-    await fetch('/api/sell/img', {
+    await fetch('https://everest-app-api.onrender.com/api/sell/img', {
       method: 'POST',
       body: formData,
     })

@@ -9,7 +9,7 @@ const CheckOutSucces = () => {
         for(var i=0;i<=local.length-1;i++){
           let unitate = 0
           unitate = local[i]['unitate'] * local[i]['quantity']
-          fetch("/api/sell/suma_stransa", {
+          fetch("https://everest-app-api.onrender.com/api/sell/suma_stransa", {
             method: 'PATCH',
             headers: {
               'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ const CheckOutSucces = () => {
             let contor = 0
             while(contor !== local[i]['quantity'])
             {
-                fetch("/api/sell/asign/user/list/" + local[i]['id'], {
+                fetch("https://everest-app-api.onrender.com/api/sell/asign/user/list/" + local[i]['id'], {
                     method: "POST",
                     headers: {
                       "Content-Type": "application/json",

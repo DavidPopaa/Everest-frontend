@@ -83,7 +83,7 @@ const Imbracaminte = () => {
   useEffect(() => {
     const getAllData = async () => {
       try {
-        const response = await fetch("/api/sell/Imbracaminte");
+        const response = await fetch("https://everest-app-api.onrender.com/api/sell/Imbracaminte");
         const json = await response.json();
         await setAllData(json);
       } catch (error) {
@@ -94,7 +94,7 @@ const Imbracaminte = () => {
   }, []);
   const navigate = useNavigate();
   function deleteProduct(id) {
-    fetch("/api/sell/delete/" + id, {
+    fetch("https://everest-app-api.onrender.com/api/sell/delete/" + id, {
       method: "DELETE",
     })
       .then(() => console.log("deleted"))

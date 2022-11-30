@@ -82,7 +82,7 @@ const Natura = () => {
   useEffect(() => {
     const getAllData = async () => {
       try {
-        const response = await fetch("/api/sell/natura");
+        const response = await fetch("https://everest-app-api.onrender.com/api/sell/natura");
         const json = await response.json();
         await setAllData(json);
       } catch (error) {
@@ -93,7 +93,7 @@ const Natura = () => {
   }, []);
   const navigate = useNavigate();
   function deleteProduct(id) {
-    fetch("/api/sell/delete/" + id, {
+    fetch("https://everest-app-api.onrender.com/api/sell/delete/" + id, {
       method: "DELETE",
     })
       .then(() => console.log("deleted"))
