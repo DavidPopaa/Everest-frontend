@@ -7,7 +7,7 @@ const PayButton = () => {
     const { username } = user
     const showCartItems = async () => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems))          
-        const response = await fetch('/stripe/buy/create-checkout-session', {
+        const response = await fetch('https://everest-app-api.onrender.com/stripe/buy/create-checkout-session', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
