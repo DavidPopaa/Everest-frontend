@@ -34,12 +34,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-      {/* {user && <Navbar />}
-      {user && <SubNavbar />} */}
-      <Navbar />
-      <SubNavbar />
+      {user && <Navbar />}
+      {user && <SubNavbar />} 
         <Routes>
-          {/* <Route path='/' element= {<Categories/>} /> 
+          <Route path='/' element= {<Categories/>} /> 
           <Route path='/Sing' element={!user ? <Sing /> : <Navigate to='/'/>}/>
           <Route path='/About' element={user ? <About /> : <Navigate to='/Log'/>} />
           <Route path='/Log' element={!user ? <Log /> : <Navigate to='/' />} />
@@ -59,28 +57,6 @@ function App() {
           <Route path='/succes' element={<CheckOutSucces />}/>
           <Route path='/cancel' element={<CheckOutCancel />} />
           <Route path='/VindeProdus' element={user ? <NewSellProd/> : <NotLogin />} /> 
-          <Route path='/succes-sell-product' element={<SuccesSellProd />}/>
-          <Route path="*" element={<NotFound />}></Route> */}
-          <Route path='/' element= {<Categories/>} /> 
-          <Route path='/Sing' element={<Sing />}/>
-          <Route path='/About' element={<About />} />
-          <Route path='/Log' element={<Log />} />
-          <Route path='/Contact' element={<Contact />} /> 
-          <Route path='/sell-product' element={<SellProduct />} /> 
-          <Route path='/allProducts' element={<AllProducts />} />
-          <Route path='/Jucarii' element={<Jucarii />} />
-          <Route path='/Natura' element={ <Natura />} />
-          <Route path='/Papuci' element={<Papuci /> } />
-          <Route path='/Tehnologie' element={<Technologie />} />
-          <Route path='/Ceasuri' element={ <Ceasuri />} />
-          <Route path='/PentruAcasa' element={<PentruAcasa />} />
-          <Route path='/Imbracaminte' element={<Imbracaminte />} />
-          <Route path='/Arta' element={<Arta />} />
-          <Route path='/Altele' element={<Altele />} />
-          <Route path='/CumparateDeMine' element={<BoughtByMe />} />
-          <Route path='/succes' element={<CheckOutSucces />}/>
-          <Route path='/cancel' element={<CheckOutCancel />} />
-          <Route path='/VindeProdus' element={<NewSellProd/>} /> 
           <Route path='/succes-sell-product' element={<SuccesSellProd />}/>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>

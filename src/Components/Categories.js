@@ -70,7 +70,7 @@ const Categories = () => {
           </div>
         </div>
       </div>
-     {/* {user && (<div className="main-categories-container">
+     {user && (<div className="main-categories-container">
         <div className="main-categories-small-container">
           <div className="main-categories-title">Categorii</div>
           <div className="main-categories-big">
@@ -105,43 +105,7 @@ const Categories = () => {
             </div>
           </div>
         </div>
-      </div>)} */}
-      <div className="main-categories-container">
-        <div className="main-categories-small-container">
-          <div className="main-categories-title">Categorii</div>
-          <div className="main-categories-big">
-            <div className="main-categories">
-              <Link to="/Jucarii" className="dec">
-                <div className="main-categories-div main-1">Jucarii</div>
-              </Link>
-              <Link to="/Natura" className="dec">
-                <div className="main-categories-div main-2">Natura</div>
-              </Link>
-              <Link to="/Papuci" className="dec">
-                <div className="main-categories-div main-3">Papuci</div>
-              </Link>
-              <Link to="/Tehnologie" className="dec">
-                <div className="main-categories-div main-4">Tehnologie</div>
-              </Link>
-              <Link to="/Ceasuri" className="dec">
-                <div className="main-categories-div main-5">Accesori</div>
-              </Link>
-              <Link to="/PentruAcasa" className="dec">
-                <div className="main-categories-div main-6">Acasa</div>
-              </Link>
-              <Link to="/Imbracaminte" className="dec">
-                <div className="main-categories-div main-7">Haine</div>
-              </Link>
-              <Link to="/Arta" className="dec">
-                <div className="main-categories-div main-8">Arta</div>
-              </Link>
-              <Link to="/Altele" className="dec">
-                <div className="main-categories-div main-9">Altele</div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>)}
     </div>
   );
 };
