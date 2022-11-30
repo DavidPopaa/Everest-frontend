@@ -37,27 +37,27 @@ function App() {
       {user && <Navbar />}
       {user && <SubNavbar />}
         <Routes>
-          <Route path='https://everest-app.onrender.com/' element= {<Categories/>} /> 
-          <Route path='https://everest-app.onrender.com/Sing' element={!user ? <Sing /> : <Navigate to='/'/>}/>
-          <Route path='https://everest-app.onrender.com/About' element={user ? <About /> : <Navigate to='/Log'/>} />
-          <Route path='https://everest-app.onrender.com/Log' element={!user ? <Log /> : <Navigate to='/' />} />
-          <Route path='https://everest-app.onrender.com/Contact' element={user ? <Contact /> : <NotLogin/>} /> 
-          <Route path='https://everest-app.onrender.com/sell-product' element={user ? <SellProduct /> : <NotLogin />} /> 
-          <Route path='https://everest-app.onrender.com/allProducts' element={user ? <AllProducts /> : <NotLogin/>} />
-          <Route path='https://everest-app.onrender.com/Jucarii' element={user ? <Jucarii /> : <NotLogin />} />
-          <Route path='https://everest-app.onrender.com/Natura' element={user ? <Natura /> : <NotLogin/>} />
-          <Route path='https://everest-app.onrender.com/Papuci' element={user ? <Papuci /> : <NotLogin /> } />
-          <Route path='https://everest-app.onrender.com/Tehnologie' element={user ? <Technologie /> : <NotLogin />} />
-          <Route path='https://everest-app.onrender.com/Ceasuri' element={user ? <Ceasuri /> : <NotLogin/>} />
-          <Route path='https://everest-app.onrender.com/PentruAcasa' element={user ? <PentruAcasa /> : <NotLogin/>} />
-          <Route path='https://everest-app.onrender.com/Imbracaminte' element={user ? <Imbracaminte /> : <NotLogin/>} />
-          <Route path='https://everest-app.onrender.com/Arta' element={user ? <Arta /> : <NotLogin />} />
-          <Route path='https://everest-app.onrender.com/Altele' element={user ? <Altele /> :  <NotLogin />} />
-          <Route path='https://everest-app.onrender.com/CumparateDeMine' element={user ? <BoughtByMe /> : <NotLogin/>} />
-          <Route path='https://everest-app.onrender.com/success' element={<CheckOutSucces />}/>
-          <Route path='https://everest-app.onrender.com/cancel' element={<CheckOutCancel />} />
-          <Route path='https://everest-app.onrender.com/VindeProdus' element={user ? <NewSellProd/> : <NotLogin />} /> 
-          <Route path='https://everest-app.onrender.com/succes-sell-product' element={<SuccesSellProd />}/>
+          <Route path='/' element= {<Categories/>} /> 
+          <Route path='/Sing' element={!user ? <Sing /> : <Navigate to='/'/>}/>
+          <Route path='/About' element={user ? <About /> : <Navigate to='/Log'/>} />
+          <Route path='/Log' element={!user ? <Log /> : <Navigate to='/' />} />
+          <Route path='/Contact' element={user ? <Contact /> : <NotLogin/>} /> 
+          <Route path='/sell-product' element={user ? <SellProduct /> : <NotLogin />} /> 
+          <Route path='/allProducts' element={user ? <AllProducts /> : <NotLogin/>} />
+          <Route path='/Jucarii' element={user ? <Jucarii /> : <NotLogin />} />
+          <Route path='/Natura' element={user ? <Natura /> : <NotLogin/>} />
+          <Route path='/Papuci' element={user ? <Papuci /> : <NotLogin /> } />
+          <Route path='/Tehnologie' element={user ? <Technologie /> : <NotLogin />} />
+          <Route path='/Ceasuri' element={user ? <Ceasuri /> : <NotLogin/>} />
+          <Route path='/PentruAcasa' element={user ? <PentruAcasa /> : <NotLogin/>} />
+          <Route path='/Imbracaminte' element={user ? <Imbracaminte /> : <NotLogin/>} />
+          <Route path='/Arta' element={user ? <Arta /> : <NotLogin />} />
+          <Route path='/Altele' element={user ? <Altele /> :  <NotLogin />} />
+          <Route path='/CumparateDeMine' element={user ? <BoughtByMe /> : <NotLogin/>} />
+          <Route path='/success' element={<CheckOutSucces />}/>
+          <Route path='/cancel' element={<CheckOutCancel />} />
+          <Route path='/VindeProdus' element={user ? <NewSellProd/> : <NotLogin />} /> 
+          <Route path='/succes-sell-product' element={<SuccesSellProd />}/>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         <Footer/>
