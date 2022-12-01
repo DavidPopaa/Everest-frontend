@@ -58,3 +58,19 @@
 .upt-close:hover {
   box-shadow: inset 0px 0px 4px 0px #000000;
 }
+@media screen and (max-width: 767px) {
+  .upt-formsdiv{
+  background-color: white;
+  height: 100%;
+  width: 33%;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 10%;
+  }
+}
