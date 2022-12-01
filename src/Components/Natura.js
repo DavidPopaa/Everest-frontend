@@ -225,11 +225,10 @@ const Natura = () => {
                   </div>
                 )}
                 <div className="all-date">
-                  Postat acum{" "}
                   {formatDistanceToNow(
                     new Date(item.created_at),
                     {
-                      addSuffix: false,
+                      addSuffix: true,
                     },
                   )}
                 </div>

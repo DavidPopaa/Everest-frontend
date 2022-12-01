@@ -225,7 +225,6 @@ const AllProducts = () => {
                   </div>
                 )}
                 <div className="all-date">
-                  Postat acum{" "}
                   {formatDistanceToNow(new Date(item.created_at), {
                     addSuffix: true,
                   })}

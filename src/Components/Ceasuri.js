@@ -225,9 +225,8 @@ const Ceasuri = () => {
                   </div>
                 )}
                 <div className="all-date">
-                  Postat acum{" "}
                   {formatDistanceToNow(new Date(item.created_at), {
-                    addSuffix: false,
+                    addSuffix: true,
                   })}
                   {/* <h2>Postat la: {item.created_at}</h2> */}
                 </div>
