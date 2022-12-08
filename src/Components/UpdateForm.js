@@ -46,7 +46,7 @@ const UpdateForm = ({
         locatie,
       }),
     }).then(() => navigate(0))
-    
+    .catch((error) => console.log(error))
   };
   return (
     <div className="upt-formsdiv">
