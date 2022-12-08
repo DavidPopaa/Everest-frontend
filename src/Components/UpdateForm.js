@@ -46,7 +46,9 @@ const UpdateForm = ({
         locatie,
       }),
     })
-    navigate(0)
+    .then(() => navigate(0))
+    .catch((error) => console.log(error))
+    
     
   };
   return (
